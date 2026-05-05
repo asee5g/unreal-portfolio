@@ -1,0 +1,499 @@
+<!-- CLEANED & PRODUCTION-READY Portfolio HTML
+     - Broken JS fixed
+     - Dragon sky removed
+     - Loader: 0.3s show + 0.6s holo fade
+     - Particle system, parallax, reveal, hamburger preserved
+     - Uses local assets (replace paths if needed)
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aseem — Unreal Engine Developer</title>
+  <link rel="icon" type="image/png" href="/Game Portfolio/Unreal Portfolio/Images/logo3.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/Game Portfolio/Unreal Portfolio/css/style.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress"></div>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div id="loader-nanites" aria-hidden="true"></div>
+    <div class="loader-ring pulse" aria-hidden="true">
+
+    </div>
+    <div class="loader-text">Initializing Unreal Systems...</div>
+    <div id="loader-cycle">Preparing assets</div>
+    <div id="loader-wave" aria-hidden="true">
+      <!-- simple animated waveform -->
+      <svg viewBox="0 0 600 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="wavePath" d="M0 50 C150 20 450 80 600 50" stroke="url(#g)" stroke-width="3" fill="none"
+          stroke-linecap="round" />
+        <defs>
+          <linearGradient id="g" x1="0" x2="1">
+            <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#6f42c1" stop-opacity="0.9" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Particles container -->
+  <div id="particles" aria-hidden="true"></div>
+
+  <header>
+    <div class="logo-group">
+      <img src="/Game Portfolio/Unreal Portfolio/Images/Logo3.png" class="header-logo" alt="Logo">
+      <div class="logo">MOHAMED ASEEM</div>
+    </div>
+
+    <div class="hamburger1" id="hamburger1">
+      <span></span><span></span><span></span>
+    </div>
+
+    <nav id="mobile1Nav">
+      <div class="nav1-close-btn" id="navClose">&times;</div>
+
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="/Game Portfolio/Unreal Portfolio/videos/2loop.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+      <h1 class="hero-name">MOHAMED ASEEM A</h1>
+      <h2 class="hero-role">UNREAL ENGINE DEVELOPER</h2>
+      <p class="hero-typing" id="heroTyping"></p>
+
+      <a href="#about" class="learn-more-link">
+        <span>LEARN ABOUT ME</span>
+        <span class="learn-more-circle">→</span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- STATS COUNTER BAR -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-number" data-target="5">0</div>
+      <div class="stat-label">Projects Built</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="0.6">0</div>
+      <div class="stat-label">Year Experience</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="3">0</div>
+      <div class="stat-label">Technologies</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="8">0</div>
+      <div class="stat-label">Skills</div>
+    </div>
+  </div>
+
+
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section1-title">Building Worlds Through Unreal — My Developer Journey</h2>
+      <div class="about1-panel">
+
+        <!-- Left Image -->
+        <div class="about1-image">
+          <img src="/Game Portfolio/Unreal Portfolio/Images/asee.jpg" alt="About Me Image">
+        </div>
+
+        <!-- Right Content -->
+        <div class="about1-content">
+          <h3>ABOUT ME</h3>
+          <p>
+            I’m <strong>Mohamed Aseem</strong>, an Unreal Engine Programmer specializing in gameplay
+            systems, animation frameworks, and interaction components using
+            <strong>C++ and Blueprints</strong>.
+            I build scalable, optimized, and clean systems that allow designers to craft immersive,
+            responsive worlds. My passion lies in taking ideas from concept to fully playable
+            mechanics that feel smooth, intuitive, and alive.
+          </p>
+
+          <a href="https://drive.google.com/file/d/14b7bsj9LT9evnOHFFxYPlfIJraZOb7Cj/view?usp=sharing"
+            class="about1-btn">
+            <span>DOWNLOAD RESUME</span>
+            <div class="btn1-circle">⬇</div>
+          </a>
+        </div>
+      </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section id="showcase">
+    <div class="container">
+      <h2 class="section1-title" style="text-align:center;">Where Ideas Become Playable Worlds —
+        Showcasing My Best Unreal Engine Development Work</h2>
+      <div class="project-grid">
+
+        <div class="project-card">
+          <h3>Character Customization (C++)</h3>
+          
+          <div class="video-embed-container">
+            <iframe 
+              src="https://drive.google.com/file/d/1hQrjPg_A6zDuZlHHtYAuyeUzy08Zkecp/preview" 
+              width="100%" height="100%" 
+              allow="autoplay"
+              title="Character Customization Showcase">
+            </iframe>
+          </div>
+
+          <p>Developed a modular character customization system in C++. This showcase demonstrates real-time skeletal mesh swapping, material parameter manipulation, and a C++ driven UI framework.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE (REPLACED / ENHANCED) -->
+  <section id="experience" style="padding:40px 8%;">
+    <div class="container">
+      <h2 class="section1-title" style="text-align:center;">Growing My Expertise Through Real Gameplay Systems & Unreal
+        Engine Development</h2>
+
+      <div class="experience-wrap">
+
+        <div class="timeline">
+
+          <!-- Internship item -->
+
+          <div class="exp-head">
+            <div class="left">
+              <div>
+                <div class="exp-title">Chainscript Labs Private Limited</div>
+                <div class="exp-sub">Unreal Engine Developer Intern</div>
+              </div>
+            </div>
+
+            <div class="exp-meta">
+              <div class="exp-role">Unreal Engine Developer Intern</div>
+              <div class="exp-duration">July 2025 — Present</div>
+            </div>
+          </div>
+
+          <ul class="exp-bullets">
+            <li>Developed scalable multiplayer gameplay systems in Unreal Engine 5 using C++</li>
+            <li>Built immersive VR interaction frameworks including hand tracking, seating mechanics, and world-space UI
+            </li>
+            <li>Implemented replicated gameplay features ensuring smooth synchronization across network clients</li>
+            <li>Worked on gameplay logic, UI implementation, networking, and bug fixing</li>
+          </ul>
+
+          <div class="exp-tags">
+            <span class="tag">Unreal Engine 5</span>
+            <span class="tag">C++</span>
+            <span class="tag">Blueprints</span>
+            <span class="tag">Multiplayer</span>
+            <span class="tag">VR</span>
+          </div>
+
+          <div class="exp-note">Work highlights: Game developer focused on Unreal Engine VR and PC multiplayer
+            development with strong skills in gameplay programming and optimization.</div>
+        </div>
+
+        <!-- /internship item -->
+
+        <!-- Placeholder for future experience items (keeps layout consistent) -->
+        <!--
+        <div class="exp-item">
+          <div class="exp-marker">•</div>
+          ...
+        </div>
+        -->
+
+      </div><!-- .timeline -->
+
+    </div><!-- .experience-wrap -->
+
+    </div>
+  </section>
+  <section class="skills-section" id="skills">
+    <h2 class="skills-title">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="/Game Portfolio/Unreal Portfolio/Images/UEWhite.png" alt="">
+        <p>Unreal Engine 5</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="/Game Portfolio/Unreal Portfolio/Images/c-.png" alt="">
+        <p>C++(Programming)</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="/Game Portfolio/Unreal Portfolio/Images/github-svgrepo-com.svg" alt="">
+        <p>GitHub</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="/Game Portfolio/Unreal Portfolio/Images/console.png" alt="">
+        <p>Gameplay Programming</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="/Game Portfolio/Unreal Portfolio/Images/VR.png" alt="">
+        <p>VR Development</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="/Game Portfolio/Unreal Portfolio/Images/UI.png" alt="">
+        <p>UI/UMG Widgets</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="/Game Portfolio/Unreal Portfolio/Images/Debugg.png" alt="">
+        <p>Optimization & Debugging</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="/Game Portfolio/Unreal Portfolio/Images/HTML.png" alt="">
+        <p>HTML 5</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="/Game Portfolio/Unreal Portfolio/Images/CSS.png" alt="">
+        <p>CSS</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="/Game Portfolio/Unreal Portfolio/Images/PowerBi.png" alt="">
+        <p>Power BI</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GITHUB CODE -->
+  <section id="github">
+    <div class="container">
+      <h2 class="section1-title" style="text-align:center;">
+        GitHub — Production-Ready Unreal Engine Code
+      </h2>
+
+      <!-- GitHub Profile Card -->
+      <div class="glass" style="text-align:center; margin-bottom:50px;">
+        <h3 style="margin-bottom:10px;">Explore My Full Codebase</h3>
+        <p style="color:#bfc8d9; max-width:700px; margin:0 auto 18px;">
+          All gameplay systems, multiplayer logic, animation frameworks, and reusable
+          Unreal Engine components are available on my GitHub.
+          Each repository is documented and production-oriented.
+        </p>
+
+        <a href="https://github.com/asee5g" target="_blank" class="btn btn-primary">
+          Visit My GitHub Profile
+        </a>
+      </div>
+
+      <!-- Repo Grid -->
+      <section class="view-code-section" id="view-code">
+        <h2 class="section-title-main">VIEW CODE & ARCHITECTURE</h2>
+
+        <div class="vc-hero">
+
+          <button class="vc-nav left" onclick="changeSlide(-1)">←</button>
+
+          <div class="vc-viewport">
+            <div class="vc-track" id="vcTrack">
+
+              <!-- SLIDE 1 -->
+              <div class="vc-slide">
+                <div class="vc-inner">
+                  <div class="vc-image">
+                    <img src="/Game Portfolio/Unreal Portfolio/Images/Custom.png">
+                  </div>
+                  <div class="vc-content">
+                    <span class="vc-tag">UNREAL ENGINE 5</span>
+                    <h3>Character Customization (C++)</h3>
+                    <p>Designed a modular C++ system enabling real-time character appearance, equipment, and stat
+                      customization.</p>
+                    <a href="https://github.com/asee5g/Character-Customization" target="_blank" class="vc-btn">
+                      <span>VIEW SOURCE</span>
+                      <div class="vc-btn-glow"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 2 -->
+              <div class="vc-slide">
+                <div class="vc-inner">
+                  <div class="vc-image">
+                    <img src="/Game Portfolio/Unreal Portfolio/Images/1.Git Image.png">
+                  </div>
+                  <div class="vc-content">
+                    <span class="vc-tag">UNREAL ENGINE 5</span>
+                    <h3>Shooting Mechanics Engine (C++)</h3>
+                    <p>Implemented core shooting mechanics in C++ including projectile handling, hit detection and
+                      weapon states.</p>
+                    <a href="https://github.com/asee5g/Shooter-Game" target="_blank" class="vc-btn">
+                      <span>VIEW SOURCE</span>
+                      <div class="vc-btn-glow"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 3 -->
+              <div class="vc-slide">
+                <div class="vc-inner">
+                  <div class="vc-image">
+                    <img src="/Game Portfolio/Unreal Portfolio/Images/Battle.png">
+                  </div>
+                  <div class="vc-content">
+                    <span class="vc-tag">UNREAL ENGINE 5</span>
+                    <h3>Battle Blaster Game (C++)</h3>
+                    <p>Built a one-on-one tank combat game in C++ featuring armored damage, cannon firing, and
+                      battlefield effects.</p>
+                    <a href="https://github.com/asee5g/Battle-Blaster" target="_blank" class="vc-btn">
+                      <span>VIEW SOURCE</span>
+                      <div class="vc-btn-glow"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 4 -->
+              <div class="vc-slide">
+                <div class="vc-inner">
+                  <div class="vc-image">
+                    <img src="/Game Portfolio/Unreal Portfolio/Images/Dungeon.png">
+                  </div>
+                  <div class="vc-content">
+                    <span class="vc-tag">UNREAL ENGINE 5</span>
+                    <h3>Mystery Dungeon Game (C++)</h3>
+                    <p>Created an immersive first-person dungeon exploration game with atmospheric lighting and
+                      puzzle-driven gameplay.</p>
+                    <a href="https://github.com/asee5g/Dungeon-Game" target="_blank" class="vc-btn">
+                      <span>VIEW SOURCE</span>
+                      <div class="vc-btn-glow"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 5 -->
+              <div class="vc-slide">
+                <div class="vc-inner">
+                  <div class="vc-image">
+                    <img src="/Game Portfolio/Unreal Portfolio/Images/Obstacle.jpg">
+                  </div>
+                  <div class="vc-content">
+                    <span class="vc-tag">UNREAL ENGINE 5</span>
+                    <h3>Obstacle Assault Game (C++)</h3>
+                    <p>Developed a fast-paced obstacle course game in C++ focusing on physics-based movement and timing
+                      challenges.</p>
+                    <a href="https://github.com/asee5g/Obstacle-Assault" target="_blank" class="vc-btn">
+                      <span>VIEW SOURCE</span>
+                      <div class="vc-btn-glow"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 6 -->
+              <div class="vc-slide">
+                <div class="vc-inner">
+                  <div class="vc-image">
+                    <img src="/Game Portfolio/Unreal Portfolio/Images/Combact.png">
+                  </div>
+                  <div class="vc-content">
+                    <span class="vc-tag">UNREAL ENGINE 5</span>
+                    <h3>Combat Damage System (Blueprints)</h3>
+                    <p>Implemented a modular combat damage system in C++ handling damage calculation, critical hits and
+                      real-time health updates.</p>
+                    <a href="https://github.com/asee5g/Combat-Damage-System" target="_blank" class="vc-btn">
+                      <span>VIEW SOURCE</span>
+                      <div class="vc-btn-glow"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <button class="vc-nav right" onclick="changeSlide(1)">→</button>
+
+        </div>
+      </section>
+
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact1-section">
+
+        <!-- Scrolling big title -->
+        <div class="contact1-marquee">
+          <span>GET IN TOUCH TODAY! GET IN TOUCH TODAY! GET IN TOUCH TODAY! GET IN TOUCH TODAY! GET IN TOUCH
+            TODAY!</span>
+        </div>
+
+
+        <div class="contact1-center">
+          <input class="contact1-input" id="subscriberEmail" placeholder="your email" type="email" />
+          <button class="contact1-btn" id="contactBtn">→</button>
+          <div style="font-weight:700;opacity:0.9;margin-left:8px">SUBMIT</div>
+        </div>
+
+        <div class="contact1-grid">
+          <div>
+            <a href="#about" class="contact1-title contact1-link">ABOUT ME. ↗</a>
+            <a href="https://www.linkedin.com/in/mohamedaseemunreal" target="_blank"
+              class="contact1-title contact1-link">LINKEDIN. ↗</a>
+            <a href="https://github.com/asee5g" target="_blank" class="contact1-title contact1-link">GITHUB. ↗</a>
+          </div>
+
+          <div>
+            <a href="https://drive.google.com/file/d/14b7bsj9LT9evnOHFFxYPlfIJraZOb7Cj/view?usp=sharing" target="_blank"
+              class="contact1-title contact1-link">DOWNLOAD RESUME. ↗</a>
+          </div>
+
+          <div>
+            <div class="contact1-title" style="color:var(--neon)">SAY HELLO</div>
+            <div>Tenkasi, Tamil Nadu, India</div>
+            <a href="https://mail.google.com/mail/?view=cm&to=mohamedaseemit@gmail.com" target="_blank"
+              style="margin-top:14px;color:var(--neon);font-weight:700;display:flex;align-items:center;gap:8px;cursor:pointer;text-decoration:none">mohamedaseemit@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact1-bottom">
+          <div>© 2025 Mohamed Aseem — All rights reserved.</div>
+          <div>Website by <strong style="color:var(--neon)">Aseem</strong></div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <footer>© 2025 Mohamed Aseem • Unreal Engine Developer</footer>
+
+  <!-- SCRIPTS: particles, loader, parallax, reveal -->
+  <script src="/Game Portfolio/Unreal Portfolio/js/main.js"></script>
+</body>
+
+</html>
